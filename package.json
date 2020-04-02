@@ -1,0 +1,29 @@
+{
+  "name": "sogral--",
+  "version": "0.0.1",
+  "description": "A less shitty version of Sogral app",
+  "license": "WTFPL",
+  "main": "index.js",
+  "scripts": {
+    "scrap": "node sogral-scraper.js",
+    "build": "browserify -p tinyify -e index.js -o index.min.js",
+    "dev": "watchify -e index.js -o index.min.js & http-server",
+    "test": "faucet test.js"
+  },
+  "dependencies": {
+    "ramda": "~0.26.1"
+  },
+  "devDependencies": {
+    "axios": "~0.19.0",
+    "axios-retry": "^3.1.2",
+    "jsdom": "~15.1.1",
+
+    "http-server": "~0.11.1",
+    "watchify": "~3.11.1",
+    "browserify": "~16.2.3",
+    "tinyify": "~2.5.1",
+
+    "riteway": "~6.0.3",
+    "faucet": "~0.0.1"
+  }
+}

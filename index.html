@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sogral--</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="icon" href="favicon.ico" />
+</head>
+<body>
+  <header>
+    <h1>Sogral--</h1>
+    <p>
+      Une version moins déplaisante de
+      <a href="https://www.sogral.dz/index.php/fr/planning-des-departs-2" target="_blank" rel="noreferrer">"l'application" de Sogral</a>.
+      <br />
+      Dynamique, fonctionne hors ligne, #brouillon 2019-07
+    </p>
+  </header>
+  <main>
+    <noscript>JavaScript est requis pour lancer cette application !</noscript>
+    <form>
+      <label>De <select name="depart" id="depart"></select></label>
+      <label>Vers <select name="dest" id="dest"></select></label>
+    </form>
+  </main>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Heure</th>
+        <th>Prix</th>
+        <th>Ligne</th>
+        <th>Transporteur</th>
+      </tr>
+    </thead>
+    <tbody id="output">
+      <!-- ... -->
+    </tbody>
+  </table>
+
+  <footer>
+  <h2>Crédits</h2>
+  <a href="https://www.sogral.dz/app_sogral/app/fr.php">Données extraites de son site web</a> / Sogral / tous droits réservés(?)
+  <hr>
+  <a href="http://www.iconarchive.com/show/circle-icons-by-martz90/clock-icon.html" target="_blank" rel="noreferrer">Clock Icon</a> / Martz90 / sous CC BY-NC-ND 4.0
+  <hr>
+  <a href="https://github.com/dreamski21/trash" target="_blank">Code source disponible sur GitHub</a> / Dreamski21 / sous WTFPL
+  </footer>
+  
+  <script src="index.min.js"></script>
+</body>
+</html>

@@ -1,29 +1,30 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sogral--</title>
+  <title>Sensible Sogral</title>
   <link rel="stylesheet" href="index.css" />
-  <link rel="icon" href="favicon.ico" />
+  <link rel="icon" href="images/duck-dark-32x32.png" />
+  <link rel="manifest" href="manifest.json">
 </head>
 <body>
   <header>
-    <h1>Sogral--</h1>
+    <h1>
+      <img src="images/duck-black.svg" alt="">
+      Sensible Sogral
+    </h1>
     <p>
-      Une version moins déplaisante de
-      <a href="https://www.sogral.dz/index.php/fr/planning-des-departs-2" target="_blank" rel="noreferrer">"l'application" de Sogral</a>.
-      <br />
-      Dynamique, fonctionne hors ligne, #brouillon 2019-07
+      A more sensible version than Sogral's 
+      <a href="https://www.sogral.dz/index.php/fr/planning-des-departs-2" target="_blank" rel="noreferrer">official bus schedule web app</a>.
     </p>
   </header>
+
   <main>
-    <noscript>JavaScript est requis pour lancer cette application !</noscript>
     <form>
-      <label>De <select name="depart" id="depart"></select></label>
-      <label>Vers <select name="dest" id="dest"></select></label>
+      <label>Starting point <select name="depart" id="depart"></select></label>
+      <label>Destination <select name="dest" id="dest"></select></label>
     </form>
-  </main>
 
   <table>
     <thead>
@@ -39,15 +40,27 @@
     </tbody>
   </table>
 
-  <footer>
-  <h2>Crédits</h2>
-  <a href="https://www.sogral.dz/app_sogral/app/fr.php">Données extraites de son site web</a> / Sogral / tous droits réservés(?)
-  <hr>
-  <a href="http://www.iconarchive.com/show/circle-icons-by-martz90/clock-icon.html" target="_blank" rel="noreferrer">Clock Icon</a> / Martz90 / sous CC BY-NC-ND 4.0
-  <hr>
-  <a href="https://github.com/dreamski21/trash" target="_blank">Code source disponible sur GitHub</a> / Dreamski21 / sous WTFPL
-  </footer>
-  
-  <script src="index.min.js"></script>
+</main>
+
+<footer>
+  <h2>Credits</h2>
+  <ul>
+    <li><a href="https://www.sogral.dz/app_sogral/app/fr.php">Data extracted from Sogral's website</a></li>
+
+    <li>Duck icon by <a href="https://www.flaticon.com/authors/freepik" target="_blank" rel="noreferrer" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></li>
+
+    <li>Built by dreamski21 and released under WTFPL. <a href="https://github.com/dreamski21/sensible-sogral" target="_blank">Source code available on GitHub</a>.</li>
+  </ul>
+</footer>
+
+<script src="index.min.js"></script>
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker
+    .register('service-worker.js', {scope: '/sensible-sogral/'})
+    .then((registration) => console.log('[Service Worker] Registration successful, scope is:' + registration.scope) )
+    .catch((error) => console.log('[Service Worker] Registration failed', error) );
+}
+</script>
 </body>
 </html>

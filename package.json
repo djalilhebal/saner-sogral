@@ -1,7 +1,7 @@
 {
   "name": "sogral--",
   "version": "0.0.1",
-  "description": "A less shitty version of Sogral app",
+  "description": "A less shitty version than Sogral's official web app",
   "license": "WTFPL",
   "main": "index.js",
   "scripts": {
@@ -16,13 +16,12 @@
   "devDependencies": {
     "axios": "~0.19.0",
     "axios-retry": "^3.1.2",
+    "sleep-promise": "^8.0.1",
     "jsdom": "~15.1.1",
-
     "http-server": "~0.11.1",
     "watchify": "~3.11.1",
     "browserify": "~16.2.3",
     "tinyify": "~2.5.1",
-
     "riteway": "~6.0.3",
     "faucet": "~0.0.1"
   }

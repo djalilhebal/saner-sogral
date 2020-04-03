@@ -1,0 +1,23 @@
+{
+  "name": "Sensible Sogral",
+  "short_name": "Sogral",
+  "description": "A more sensible version than Sogral's official bus schedule web app.",
+
+  "start_url": "index.html#depart=12&dest=18",
+  "scope": "/sensible-sogral/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#005c2b",
+  "icons": [
+    {
+      "src": "images/duck-light-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "images/duck-light.svg",
+      "type": "image/svg+xml"
+    }
+  ]
+
+}

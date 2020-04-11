@@ -1,10 +1,10 @@
-const cacheName = 'sensible-sogral-v1';
+const cacheName = 'saner-sogral-v1';
 const filesToCache = [
   './',
   './index.html',
   './index.css',
   './index.min.js',
-  './images/duck-black.svg',
+  './images/duck.svg',
 ];
 
 self.addEventListener('install', (installEvent) => {

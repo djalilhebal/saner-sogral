@@ -1,21 +1,26 @@
 {
-  "name": "Sensible Sogral",
+  "name": "Saner Sogral",
   "short_name": "Sogral",
-  "description": "A more sensible version than Sogral's official bus schedule web app.",
+  "description": "A saner version than Sogral's official bus timetable app.",
 
   "start_url": "index.html#depart=12&dest=18",
-  "scope": "/sensible-sogral/",
+  "scope": "/saner-sogral/",
   "display": "standalone",
   "orientation": "portrait-primary",
   "theme_color": "#005c2b",
   "icons": [
     {
-      "src": "images/duck-light-512x512.png",
-      "type": "image/png",
-      "sizes": "512x512"
+      "src": "images/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
     },
     {
-      "src": "images/duck-light.svg",
+      "src": "images/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icon.svg",
       "type": "image/svg+xml"
     }
   ]

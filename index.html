@@ -3,36 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sensible Sogral</title>
+  <title>Saner Sogral</title>
   <link rel="stylesheet" href="index.css" />
-  <link rel="icon" href="images/duck-dark-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/icon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/icon-32x32.png">
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
   <header>
-    <h1>
-      <img src="images/duck-black.svg" alt="">
-      Sensible Sogral
-    </h1>
+    <h1>Saner Sogral</h1>
     <p>
-      A more sensible version than Sogral's 
-      <a href="https://www.sogral.dz/index.php/fr/planning-des-departs-2" target="_blank" rel="noreferrer">official bus schedule web app</a>.
+      A saner version than Sogral's 
+      <a href="https://www.sogral.dz/index.php/fr/planning-des-departs-2" target="_blank" rel="noreferrer">official bus timetable app</a>.
     </p>
   </header>
 
   <main>
     <form>
-      <label>Starting point <select name="depart" id="depart"></select></label>
+      <label>Departure <select name="depart" id="depart"></select></label>
       <label>Destination <select name="dest" id="dest"></select></label>
     </form>
 
   <table>
     <thead>
       <tr>
-        <th>Heure</th>
-        <th>Prix</th>
-        <th>Ligne</th>
-        <th>Transporteur</th>
+        <th>Time</th>
+        <th>Price</th>
+        <th>Route</th>
+        <th>Transporter</th>
       </tr>
     </thead>
     <tbody id="output">
@@ -44,12 +42,13 @@
 
 <footer>
   <h2>Credits</h2>
+
   <ul>
-    <li><a href="https://www.sogral.dz/app_sogral/app/fr.php">Data extracted from Sogral's website</a></li>
+    <li>Data extracted from <a href="https://www.sogral.dz/app_sogral/app/fr.php">Sogral's official website</a>.</li>
 
-    <li>Duck icon by <a href="https://www.flaticon.com/authors/freepik" target="_blank" rel="noreferrer" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></li>
+    <li>Duck icon by <a href="https://www.flaticon.com/authors/freepik" target="_blank" rel="noreferrer" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>.</li>
 
-    <li>Built by dreamski21 and released under WTFPL. <a href="https://github.com/dreamski21/sensible-sogral" target="_blank">Source code available on GitHub</a>.</li>
+    <li>Built by <a href="https://twitter.com/djalilhebal">Abdeldjalil Hebal</a> and released under WTFPL, source code available<a href="https://github.com/djalilhebal/saner-sogral" target="_blank"> on GitHub</a>.</li>
   </ul>
 </footer>
 
@@ -57,7 +56,7 @@
 <script>
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker
-    .register('service-worker.js', {scope: '/sensible-sogral/'})
+    .register('service-worker.js', {scope: '/saner-sogral/'})
     .then((registration) => console.log('[Service Worker] Registration successful, scope is:' + registration.scope) )
     .catch((error) => console.log('[Service Worker] Registration failed', error) );
 }

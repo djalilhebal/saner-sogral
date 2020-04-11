@@ -1,7 +1,9 @@
 {
-  "name": "sogral--",
-  "version": "0.0.1",
-  "description": "A less shitty version than Sogral's official web app",
+  "name": "saner-sogral",
+  "version": "0.0.2",
+  "description": "A saner version than Sogral's official web app",
+  "homepage": "https://github.com/djalilhebal/saner-sogral",
+  "author": "Abdeldjalil Hebal <abdeldjalil.hebal@gmail.com> (https://djalil.me)",
   "license": "WTFPL",
   "main": "index.js",
   "scripts": {

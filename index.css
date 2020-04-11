@@ -1,34 +1,37 @@
+:root {
+  --sogral-dark-color: #005c2b;
+  --sogral-light-color: #16a234;
+}
+
 * {
   padding: 0;
   margin: 0;
 }
 
+:focus {
+  outline: 2px solid orange;
+}
+
 body {
   text-align: center;
-  background: #16a234;
+  background: var(--sogral-light-color);
   margin: 5px;
   font-size: 16px;
   font-family: sans;
 }
 
-header, footer {
-  padding: 5px;
-  margin: 10px 0;
-  font-family: mono;
-}
+/*** Header ***/
 
 header {
   background: white;
-}
-
-footer {
-  text-align: left;
-  line-height: 2;
+  padding: 5px;
+  font-family: mono;
 }
 
 a {
-  color: inherit;
   font-weight: bold;
+  text-decoration: none;
+  color: var(--sogral-dark-color);
 }
 
 img {
@@ -44,27 +47,49 @@ h1 {
     background: white;
     padding: 5px;
 }
+
+/* Adapted from SaraSoueidan.com/css/screen.css: .blog__post-title.link::before */
+h1::before {
+    content: "";
+    display: inline-block;
+    background-size: cover;
+    background-image: url(images/duck.svg);
+    background-position: center;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    position: relative;
+    top: -3px;
+    margin-right: .5em;
+}    
+
 /*** MAIN/INPUT ***/
 
 form {
-  background: #005c2b;
+  background: var(--sogral-dark-color);
   color: white;
-  border-radius: 15px 15px 0 0;
-  padding: 10px;
+  border-radius: 15px;
+  padding: 16px 0;
+  margin: 15px 0;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-content: baseline;
+  box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1), 0 0 0 2px #005c2b, 0.3em 1.3em 1em rgba(0,0,0,0.3);
 }
 
 form label {
-  margin: 3px;
+  margin: 5px;
+  width: 300px;
 }
 
 form select {
-  width: 275px;
+  width: 100%;
   color: black;
   text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+  background: white;
 }
 
 /*** OUTPUT ***/
@@ -77,11 +102,11 @@ table {
 
 thead {
   color: white;
-  background: #005c2b;
+  background: var(--sogral-dark-color);
 }
 
 th {
-  padding: 5px;
+  padding: 10px 0;
 }
 
 /* tbody */
@@ -101,6 +126,7 @@ th {
 
 .prix {
   color: black;
+  font-weight: bold;
 }
 
 .heure {
@@ -109,6 +135,17 @@ th {
 }
 
 .ligne, .transporteur {
-  color: gray;
+  /* color: gray; */
   font-size: small;
+}
+
+
+/** FOOTER **/
+
+footer {
+  text-align: left;
+  padding: 20px;
+  margin: 15px 0;
+  font-family: mono;
+  background: lightgreen;
 }

@@ -87,7 +87,7 @@ const generateLine = ({heure, prix, ligne, transporteur}) => `
 // generateOutput :: Array Object -> String
 function generateOutput(voyages) {
   if (voyages.length === 0) {
-    return 'Pas de donées ou pas de voyages.'
+    return 'Error: There are no trips to show.'
   } else {
     return voyages.map(generateLine).join('');
   }

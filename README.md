@@ -1,5 +1,5 @@
 # Saner Sogral
-A saner version than Sogral's official bus timetable app **\[WIP\]**
+A saner alternative to Sogral's official bus timetable app **\[WIP\]**
 
 This repo contains a scrapper and a web app that were developed back in July 2019 when I started learning functional programming with Ramda.
 
@@ -7,6 +7,7 @@ This repo contains a scrapper and a web app that were developed back in July 201
 
 Note: The "there are no trips to show" error can occur because (Sogral's published) data are incomplete.
 
+![Screenshot](images/screenshot.png)
 
 ## Features
 Compared to the official thingy:

@@ -1,7 +1,7 @@
 {
   "name": "Saner Sogral",
   "short_name": "Sogral",
-  "description": "A saner version than Sogral's official bus timetable app.",
+  "description": "A saner alternative to Sogral's official bus timetable app.",
 
   "start_url": "index.html#depart=12&dest=18",
   "scope": "/saner-sogral/",

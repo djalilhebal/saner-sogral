@@ -15,9 +15,14 @@
 body {
   text-align: center;
   background: var(--sogral-light-color);
-  margin: 5px;
+  margin: 10px;
   font-size: 16px;
   font-family: sans;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 /*** Header ***/
